@@ -1,5 +1,5 @@
 <div class="container">
-  <h3 class="text-center mt-2 mb-5">Colaboradores da empresa</h3>
+  <h3 class="text-center mt-2 mb-5">LIsta de Colaboração</h3>
 
   <div class="row mb-2">
     <form [formGroup]="formulario">
@@ -38,6 +38,11 @@
             <td class="text-center">{{colaborador.nome}}</td>
             <td class="text-center">{{colaborador.cpf | mask: '000.000.000-00'}}</td>
             <td class="text-center">
+              <button class="btn btn-success" title="café da manhã"  style="margin-left: 5px;" (click)="showCafes(colaborador.id)">
+                <i-bs name="basket-fill" width="15" height="15">
+                </i-bs>
+                Cafés
+              </button>
               <button class="btn btn-primary" title="editar" (click)="editar(colaborador.id)">
                 <i-bs name="pencil-fill" width="15" height="15">
                 </i-bs>
@@ -48,11 +53,6 @@
                 <i-bs name="trash-fill" width="15" height="15">
                 </i-bs>
                 Deletar
-              </button>
-              <button class="btn btn-success" title="café da manhã"  style="margin-left: 5px;" (click)="showCafes(colaborador.id)">
-                <i-bs name="basket-fill" width="15" height="15">
-                </i-bs>
-                Cafés
               </button>
             </td>
           </tr>

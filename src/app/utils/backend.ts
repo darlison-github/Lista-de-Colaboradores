@@ -1,6 +1,6 @@
 export class Backend{
   private static get baseUrl(): string {
-    return 'https://colaborador-backend.herokuapp.com/'
+    return 'https://lista-de-colaboradores-backend.herokuapp.com/'
   }
 
   public static get colaborador(): string  {

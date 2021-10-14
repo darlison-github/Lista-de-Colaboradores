@@ -1,10 +1,9 @@
 import { FieldMessage } from './field-message';
 export interface ProblemDetail{
-  timestamp: string
-  type: string
-  title: string
+  tipo: string
+  titulo: string
   status: number
-  detail: string
-  userMessage: string
-  errors: FieldMessage[]
+  detalhe: string
+  mensagemUsuario: string
+  erros: FieldMessage[]
 }

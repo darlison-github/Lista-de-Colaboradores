@@ -1,4 +1,4 @@
 export interface FieldMessage{
-  field: string
-  userMessage: string
+  campo: string
+  usarMensagem: string
 }
